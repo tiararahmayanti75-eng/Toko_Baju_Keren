@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Baju Keren</title>
+    <!-- Memanggil file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">Baju<span>Keren</span></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#produk-section">Produk</a>
+            <a href="#tentang-section">Tentang Kami</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Tampil Kece Setiap Hari</h1>
+        <p>Koleksi pakaian terbaik dengan kualitas premium dan harga ramah kantong.</p>
+        <a href="#produk-section" class="btn">Lihat Koleksi</a>
+    </section>
+
+    <!-- Konten Utama (Pas 12 Produk Unik) -->
+    <div class="container" id="produk-section">
+        <h2 class="section-title">Produk Terbaru</h2>
+        
+        <div class="product-grid">
+            <!-- Produk 1 -->
+            <div class="product-card">
+                <img src="foto 1.jpeg" alt="Kaos The 1975 Live" class="product-img">
+                <div class="product-info">
+                    <h3>Kaos T-Shirt The 1975 Live</h3>
+                    <div class="product-price">Rp 125.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Kaos T-Shirt The 1975 Live')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="product-card">
+                <img src="foto 2.jpeg" alt="Kaos Kendrick Lamar" class="product-img">
+                <div class="product-info">
+                    <h3>Kaos Kendrick Lamar - They Not Like Us</h3>
+                    <div class="product-price">Rp 135.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Kaos Kendrick Lamar - They Not Like Us')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="product-card">
+                <img src="foto 3.jpeg" alt="Blouse Pink Pita" class="product-img">
+                <div class="product-info">
+                    <h3>Blouse Pink Coquette Ribbon</h3>
+                    <div class="product-price">Rp 175.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Blouse Pink Coquette Ribbon')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 4 -->
+            <div class="product-card">
+                <img src="foto 4.jpeg" alt="Atasan V-Neck Pita" class="product-img">
+                <div class="product-info">
+                    <h3>Elegant V-Neck Ribbon Top</h3>
+                    <div class="product-price">Rp 160.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Elegant V-Neck Ribbon Top')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 5 -->
+            <div class="product-card">
+                <img src="foto 5.jpeg" alt="Kemeja Flanel Hitam Putih" class="product-img">
+                <div class="product-info">
+                    <h3>Kemeja Flanel Monochrome</h3>
+                    <div class="product-price">Rp 195.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Kemeja Flanel Monochrome')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 6 -->
+            <div class="product-card">
+                <img src="foto 6.jpeg" alt="Kemeja Kotak Terakota" class="product-img">
+                <div class="product-info">
+                    <h3>Kemeja Kotak Terracotta Casual</h3>
+                    <div class="product-price">Rp 180.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Kemeja Kotak Terracotta Casual')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 7 -->
+            <div class="product-card">
+                <img src="foto 7.jpeg" alt="Kemeja Garis Biru" class="product-img">
+                <div class="product-info">
+                    <h3>Kemeja Stripe Blue Slim-Fit</h3>
+                    <div class="product-price">Rp 165.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Kemeja Stripe Blue Slim-Fit')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 8 -->
+            <div class="product-card">
+                <img src="foto 8.jpeg" alt="Kemeja Putih Formal" class="product-img">
+                <div class="product-info">
+                    <h3>Kemeja Putih Formal Elegant</h3>
+                    <div class="product-price">Rp 155.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Kemeja Putih Formal Elegant')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 9 -->
+            <div class="product-card">
+                <img src="foto 9.jpeg" alt="Kaos T-Shirt Finsbury Park" class="product-img">
+                <div class="product-info">
+                    <h3>Kaos The 1975 Finsbury Park</h3>
+                    <div class="product-price">Rp 125.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Kaos The 1975 Finsbury Park')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 10 -->
+            <div class="product-card">
+                <img src="foto 10.jpeg" alt="Kemeja Oversize Earth Tone" class="product-img">
+                <div class="product-info">
+                    <h3>Kemeja Casual Earth Tone</h3>
+                    <div class="product-price">Rp 170.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Kemeja Casual Earth Tone')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 11 -->
+            <div class="product-card">
+                <img src="foto 11.jpeg" alt="Jaket Jaket Kasual" class="product-img">
+                <div class="product-info">
+                    <h3>Outerwear Casual Jaket</h3>
+                    <div class="product-price">Rp 210.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Outerwear Casual Jaket')">Beli Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Produk 12 -->
+            <div class="product-card">
+                <img src="foto 12.jpeg" alt="Blouse Gingham Pink" class="product-img">
+                <div class="product-info">
+                    <h3>Gingham Pink Ruffle Blouse</h3>
+                    <div class="product-price">Rp 185.000</div>
+                    <a href="#" class="btn-buy" onclick="tambahKeKeranjang('Gingham Pink Ruffle Blouse')">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Tambahan: Tentang Kami -->
+    <div class="container" id="tentang-section" style="margin-top: 60px; margin-bottom: 80px;">
+        <h2 class="section-title">Tentang Kami</h2>
+        <div style="background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+            <p><strong>Toko Baju Keren</strong> adalah destinasi utama bagi kamu yang mencari pakaian kasual, estetik, dan tren terkini seperti gaya Coquette hingga Vintage Streetwear. Kami berkomitmen menyediakan produk berkualitas premium dengan harga yang tetap bersahabat di kantong mahasiswa.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer-section">
+        <p>&copy; 2026 Toko Baju Keren.</p>
+    </footer>
+
+    <!-- Memanggil file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
